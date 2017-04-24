@@ -1,4 +1,4 @@
-MultilingualRoutingBundle [![Build Status](https://travis-ci.org/inwaar/MultilingualRoutingBundle.svg?branch=master)](https://travis-ci.org/inwaar/MultilingualRoutingBundle) [![Coverage Status](https://coveralls.io/repos/github/inwaar/MultilingualRoutingBundle/badge.svg?branch=master)](https://coveralls.io/github/inwaar/MultilingualRoutingBundle?branch=master)
+MultilingualRoutingBundle [![Build Status](https://travis-ci.org/inwaar/MultilingualRoutingBundle.svg?branch=master)](https://travis-ci.org/inwaar/MultilingualRoutingBundle)
 ======
 
 Multilingual Routing Bundle for the Symfony Framework
