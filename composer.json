@@ -1,0 +1,27 @@
+{
+    "name": "inwaar/multilingual-routing-bundle",
+    "description": "Simple example of multilingual routing and translating",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "MultilingualRoutingBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "symfony/framework-bundle": "~3.2",
+        "symfony/translation": "~3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7",
+        "symfony/framework-bundle": "~3.2",
+        "symfony/phpunit-bridge": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Staroverov",
+            "email": "inwaar@gmail.com"
+        }
+    ]
+}

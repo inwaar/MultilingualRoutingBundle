@@ -1,0 +1,27 @@
+services:
+  multilingual.routing.router:
+    class: MultilingualRoutingBundle\Routing\MultiLingualRouter
+    arguments:
+      - '@multilingual.routing.router.inner'
+      - '%kernel.default_locale%'
+    decorates: router
+
+  multilingual.routing.mapper.postfix:
+    class: MultilingualRoutingBundle\Routing\Mapper\PostfixMapper
+    arguments:
+      - '%kernel.default_locale%'
+
+  multilingual.routing.route_loader:
+    class: MultilingualRoutingBundle\Routing\RouteLoader
+    arguments:
+      - '%kernel.default_locale%'
+    tags:
+        - { name: routing.loader }
+
+  multilingual_routing.translator:
+    class: MultilingualRoutingBundle\Translation\MultiDomainTranslator
+    arguments:
+      - '@multilingual_routing.translator.inner'
+      - '@router.request_context'
+      - '@multilingual.routing.mapper.postfix'
+    decorates: translator

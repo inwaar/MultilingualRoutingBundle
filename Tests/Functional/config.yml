@@ -1,0 +1,18 @@
+framework:
+    secret: test
+    session:
+        storage_id: session.storage.mock_file
+    translator:
+        enabled: true
+        fallbacks: ['en']
+    router:
+        type: localized
+        resource: '%kernel.root_dir%/routing.yml'
+        strict_requirements: ~
+    default_locale: 'en'
+
+multilingual_routing:
+    mapper: postfix
+    map:
+      en: com
+      en_GB: co.uk
